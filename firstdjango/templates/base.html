@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <!-- static uses STATIC_URL varialbe -->
+    <title>Inventory Project</title>
+</head>
+<body>
+    {% block content %}
+    <!-- place the child template put content -->
+    {% endblock content %}
+<script src="{% static 'main.js'%}"></script>
+</body>
+</html>
